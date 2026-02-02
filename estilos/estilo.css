@@ -1,0 +1,127 @@
+@charset
+    "UTF-8";
+    /* 
+    #84E1AD
+    #125531
+    #1b1b1b
+    #0000001a
+    #ffffff
+    
+    */
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../fontes/idroid.otf');
+}
+
+:root{
+        --cor01: #84E1AD;
+        --cor02: #125531;   
+        --cor03: #1b1b1b;
+        --cor04: #0000001a;
+        --cor05: #ffffff;
+}
+
+body {
+    font-family:  sans-serif;
+    margin: 0px;
+    background-color: var(--cor01);
+    color: #1b1b1b;}
+h1 {
+    font-family: 'MinhaFonte', sans-serif;
+    color: #125531;
+    }
+h1#principal {
+    font-family: 'opensans', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+p#principal {
+    font-family: 'opensans', sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    color: #ffffff;
+    text-align: center;
+}
+h2 {
+    font-family: 'MinhaFonte', sans-serif;
+    color: #125531;
+}
+h3 {
+    font-family: sans-serif;
+    color: #ffffff;
+}
+h3#principal {
+    background-color: #125531;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: -10px -10px 0px -10px;
+
+}
+p {
+    text-indent: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+header {
+    background-image: linear-gradient(to bottom,#84E1AD,#125531);
+    padding: 5px;
+    color: #ffffff;
+    text-align: left;
+    box-shadow: 0 4px 8px #0000001a;
+    margin-bottom: 40px;
+}
+article {
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: 20px 120px 20px 120px;
+
+}
+article img {
+    max-width: 100%;
+    margin: 20px auto;
+    height: auto;
+    display: block;
+}
+nav a {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    transition-duration: 0.5s;
+}
+nav a:hover {
+    background-color: var(--cor02);
+}
+section {
+    background-color: #84E1AD;
+    color: #1d1d1d;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: 20px -30px 20px -30px;
+}
+section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas */
+    gap: 10px; /* espaçamento entre os itens */
+    padding-left: 20px;
+    list-style: none;
+}
+footer {
+    font-size: 10px;
+    font-family: monospace;
+    background-color: #125531;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px -10px;
+    margin: 10px -50px -20px -50px;
+}
